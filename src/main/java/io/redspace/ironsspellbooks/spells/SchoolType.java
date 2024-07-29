@@ -7,14 +7,14 @@ import net.minecraft.network.chat.Style;
 import net.minecraft.world.item.ItemStack;
 
 public enum SchoolType {
-    FIRE(0),
-    ICE(1),
-    LIGHTNING(2),
-    HOLY(3),
-    ENDER(4),
-    BLOOD(5),
-    EVOCATION(6),
-    POISON(8);
+    FLAMETIDE(0),
+    CHILLWEAVING(1),
+    VOLTTEAR(2),
+    AETHERLIGHT(3),
+    ENDERECLIPSE(4),
+    HEMOSPIRE(5),
+    INVOKEVEIL(6),
+    BLIGHTROT(8);
 
     private final int value;
 
@@ -31,35 +31,35 @@ public enum SchoolType {
     }
 
     public static SchoolType getSchoolFromItem(ItemStack stack) {
-        if (stack.is(ModTags.FIRE_FOCUS)) {
-            return FIRE;
-        } else if (stack.is(ModTags.ICE_FOCUS)) {
-            return ICE;
-        } else if (stack.is(ModTags.LIGHTNING_FOCUS)) {
-            return LIGHTNING;
-        } else if (stack.is(ModTags.HOLY_FOCUS)) {
-            return HOLY;
-        } else if (stack.is(ModTags.ENDER_FOCUS)) {
-            return ENDER;
-        } else if (stack.is(ModTags.BLOOD_FOCUS)) {
-            return BLOOD;
-        } else if (stack.is(ModTags.EVOCATION_FOCUS)) {
-            return EVOCATION;
-        }else if (stack.is(ModTags.POISON_FOCUS)) {
-            return POISON;
+        if (stack.is(ModTags.FLAMETIDE_FOCUS)) {
+            return FLAMETIDE;
+        } else if (stack.is(ModTags.CHILLWEAVING_FOCUS)) {
+            return CHILLWEAVING;
+        } else if (stack.is(ModTags.VOLTTEAR_FOCUS)) {
+            return VOLTTEAR;
+        } else if (stack.is(ModTags.AETHERLIGHT_FOCUS)) {
+            return AETHERLIGHT;
+        } else if (stack.is(ModTags.ENDERECLIPSE_FOCUS)) {
+            return ENDERECLIPSE;
+        } else if (stack.is(ModTags.HEMOSPIRE_FOCUS)) {
+            return HEMOSPIRE;
+        } else if (stack.is(ModTags.INVOKEVEIL_FOCUS)) {
+            return INVOKEVEIL;
+        }else if (stack.is(ModTags.BLIGHTROT_FOCUS)) {
+            return BLIGHTROT;
         } else return null;
     }
 
-    public static final net.minecraft.network.chat.Component DISPLAY_FIRE = Component.translatable("school.irons_spellbooks.fire").withStyle(ChatFormatting.GOLD);
-    public static final net.minecraft.network.chat.Component DISPLAY_ICE = Component.translatable("school.irons_spellbooks.ice").withStyle(Style.EMPTY.withColor(0xd0f9ff));
-    public static final net.minecraft.network.chat.Component DISPLAY_LIGHTNING = Component.translatable("school.irons_spellbooks.lightning").withStyle(ChatFormatting.AQUA);
-    public static final net.minecraft.network.chat.Component DISPLAY_HOLY = Component.translatable("school.irons_spellbooks.holy").withStyle(Style.EMPTY.withColor(0xfff8d4));
-    public static final net.minecraft.network.chat.Component DISPLAY_ENDER = Component.translatable("school.irons_spellbooks.ender").withStyle(ChatFormatting.LIGHT_PURPLE);
-    public static final net.minecraft.network.chat.Component DISPLAY_BLOOD = Component.translatable("school.irons_spellbooks.blood").withStyle(ChatFormatting.DARK_RED);
-    public static final net.minecraft.network.chat.Component DISPLAY_EVOCATION = Component.translatable("school.irons_spellbooks.evocation").withStyle(ChatFormatting.WHITE);
-    public static final net.minecraft.network.chat.Component DISPLAY_VOID = Component.translatable("school.irons_spellbooks.void").withStyle(Style.EMPTY.withColor(0x490059));
-    public static final net.minecraft.network.chat.Component DISPLAY_POISON = Component.translatable("school.irons_spellbooks.poison").withStyle(ChatFormatting.GREEN);
-    public static final net.minecraft.network.chat.Component[] DISPLAYS = {DISPLAY_FIRE, DISPLAY_ICE, DISPLAY_LIGHTNING, DISPLAY_HOLY, DISPLAY_ENDER, DISPLAY_BLOOD, DISPLAY_EVOCATION, DISPLAY_VOID, DISPLAY_POISON};
+    public static final net.minecraft.network.chat.Component DISPLAY_FLAMETIDE = Component.translatable("school.irons_spellbooks.fire").withStyle(ChatFormatting.GOLD);
+    public static final net.minecraft.network.chat.Component DISPLAY_CHILLWEAVING = Component.translatable("school.irons_spellbooks.ice").withStyle(Style.EMPTY.withColor(0xd0f9ff));
+    public static final net.minecraft.network.chat.Component DISPLAY_VOLTTEAR = Component.translatable("school.irons_spellbooks.lightning").withStyle(ChatFormatting.AQUA);
+    public static final net.minecraft.network.chat.Component DISPLAY_AETHERLIGHT = Component.translatable("school.irons_spellbooks.holy").withStyle(Style.EMPTY.withColor(0xfff8d4));
+    public static final net.minecraft.network.chat.Component DISPLAY_ENDERECLIPSE = Component.translatable("school.irons_spellbooks.ender").withStyle(ChatFormatting.LIGHT_PURPLE);
+    public static final net.minecraft.network.chat.Component DISPLAY_HEMOSPIRE = Component.translatable("school.irons_spellbooks.blood").withStyle(ChatFormatting.DARK_RED);
+    public static final net.minecraft.network.chat.Component DISPLAY_INVOKEVEIL = Component.translatable("school.irons_spellbooks.evocation").withStyle(ChatFormatting.WHITE);
+    public static final net.minecraft.network.chat.Component DISPLAY_ENDERGLOOM = Component.translatable("school.irons_spellbooks.void").withStyle(Style.EMPTY.withColor(0x490059));
+    public static final net.minecraft.network.chat.Component DISPLAY_BLIGHTROT = Component.translatable("school.irons_spellbooks.poison").withStyle(ChatFormatting.GREEN);
+    public static final net.minecraft.network.chat.Component[] DISPLAYS = {DISPLAY_FLAMETIDE, DISPLAY_CHILLWEAVING, DISPLAY_VOLTTEAR, DISPLAY_AETHERLIGHT, DISPLAY_ENDERECLIPSE, DISPLAY_HEMOSPIRE, DISPLAY_INVOKEVEIL, DISPLAY_ENDERGLOOM, DISPLAY_BLIGHTROT};
 
 
 }
